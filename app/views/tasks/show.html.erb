@@ -2,3 +2,11 @@
 
 <p><%= @task.description %></p>
 <p><%= @task.done %></p>
+<p><%= @task.created_at %></p>
+<p><%= @task.updated_at %></p>
+<%= link_to 'Modifier', edit_task_path(@task) %>
+<%= link_to 'Supprimer', task_path(@task), method: :delete %>
+
+<hr>
+<h3><%= link_to 'Revenir à la liste de tâches', tasks_path %></h3>
+

@@ -11,6 +11,8 @@
   <p>Description : <%= task.description %></p>
   <p>Done ? <%= task.done %></p>
   <%= link_to 'Voir détails', task_path(task) %>
+  <%= link_to 'Modifier', edit_task_path(task) %>
+  <%= link_to 'Supprimer', task_path(task), method: :delete %>
   <hr>
 <% end %>
 
